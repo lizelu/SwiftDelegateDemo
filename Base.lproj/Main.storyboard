@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kT0-uQ-h5q">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--美女列表-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftDelegateDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7VD-0S-txV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BeautifulGrillCell" rowHeight="98" id="Akv-0V-kMB" customClass="BeautifulGrillCell" customModule="SwiftDelegateDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Akv-0V-kMB" id="84j-Df-lLd">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="97.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="000.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="URA-l6-6Ka">
+                                                    <rect key="frame" x="25" y="8" width="83" height="83"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="83" id="LOU-Hr-jzX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uts-aC-yS9">
+                                                    <rect key="frame" x="116" y="39" width="124" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="2dR-Uq-7nN"/>
+                                                        <constraint firstAttribute="width" constant="124" id="7RF-mb-Ew6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="uts-aC-yS9" firstAttribute="leading" secondItem="URA-l6-6Ka" secondAttribute="trailing" constant="8" id="4OD-Hs-iwL"/>
+                                                <constraint firstItem="URA-l6-6Ka" firstAttribute="top" secondItem="84j-Df-lLd" secondAttribute="top" constant="8" id="JzM-CR-Q83"/>
+                                                <constraint firstItem="uts-aC-yS9" firstAttribute="top" secondItem="84j-Df-lLd" secondAttribute="top" constant="39" id="gUL-Co-vIm"/>
+                                                <constraint firstItem="URA-l6-6Ka" firstAttribute="leading" secondItem="84j-Df-lLd" secondAttribute="leading" constant="25" id="j78-xE-xnk"/>
+                                                <constraint firstAttribute="bottom" secondItem="URA-l6-6Ka" secondAttribute="bottom" constant="6.5" id="jBm-SY-C7u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="girlImageView" destination="URA-l6-6Ka" id="2si-os-dOK"/>
+                                            <outlet property="girlNameLable" destination="uts-aC-yS9" id="KTk-d8-GL4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7VD-0S-txV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="1D2-0s-XaI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7VD-0S-txV" secondAttribute="bottom" id="H4V-wC-vmh"/>
+                            <constraint firstAttribute="trailing" secondItem="7VD-0S-txV" secondAttribute="trailing" id="ZTT-FD-aYB"/>
+                            <constraint firstItem="7VD-0S-txV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="m1V-7g-BQm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="美女列表" id="yxD-hb-gaX"/>
+                    <connections>
+                        <outlet property="myTableView" destination="7VD-0S-txV" id="s24-1r-2Sj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="191"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="0ey-fX-9f0">
+            <objects>
+                <viewController storyboardIdentifier="EditViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KIw-sk-63r" customClass="EditViewController" customModule="SwiftDelegateDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LmD-rx-p8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="768-rB-UJx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L7Y-Zj-11d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入美女姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgK-AF-mh9">
+                                <rect key="frame" x="133" y="92" width="438" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FAJ-vJ-uCl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美女姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z15-5R-pWw">
+                                <rect key="frame" x="38" y="96" width="68" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3ro-NR-hbu"/>
+                                    <constraint firstAttribute="width" constant="68" id="gyj-W4-o6l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.90067121699999997" green="1" blue="0.71771184899999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lgK-AF-mh9" firstAttribute="top" secondItem="LmD-rx-p8H" secondAttribute="bottom" constant="72" id="SUj-Yi-Oom"/>
+                            <constraint firstItem="lgK-AF-mh9" firstAttribute="leading" secondItem="z15-5R-pWw" secondAttribute="trailing" constant="27" id="X5O-Ax-LYp"/>
+                            <constraint firstItem="z15-5R-pWw" firstAttribute="top" secondItem="LmD-rx-p8H" secondAttribute="bottom" constant="76" id="khu-IW-Mgq"/>
+                            <constraint firstItem="z15-5R-pWw" firstAttribute="leading" secondItem="L7Y-Zj-11d" secondAttribute="leading" constant="38" id="xGq-pg-zdV"/>
+                            <constraint firstAttribute="trailing" secondItem="lgK-AF-mh9" secondAttribute="trailing" constant="29" id="zCF-Ec-dBV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="girlNameTextField" destination="lgK-AF-mh9" id="TTw-Zt-4ab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1p-Hb-ubY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uar-MJ-QL5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kT0-uQ-h5q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HAl-yh-HlE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ept-qu-nt9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3A-6S-76a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-189" y="191"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="000.jpg" width="220" height="220"/>
+    </resources>
+</document>
