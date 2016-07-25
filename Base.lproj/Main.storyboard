@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kT0-uQ-h5q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kT0-uQ-h5q">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--美女列表-->
@@ -18,26 +18,23 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7VD-0S-txV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BeautifulGrillCell" rowHeight="98" id="Akv-0V-kMB" customClass="BeautifulGrillCell" customModule="SwiftDelegateDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Akv-0V-kMB" id="84j-Df-lLd">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="97.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="000.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="URA-l6-6Ka">
                                                     <rect key="frame" x="25" y="8" width="83" height="83"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="83" id="LOU-Hr-jzX"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uts-aC-yS9">
                                                     <rect key="frame" x="116" y="39" width="124" height="21"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="2dR-Uq-7nN"/>
                                                         <constraint firstAttribute="width" constant="124" id="7RF-mb-Ew6"/>
@@ -47,7 +44,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="uts-aC-yS9" firstAttribute="leading" secondItem="URA-l6-6Ka" secondAttribute="trailing" constant="8" id="4OD-Hs-iwL"/>
                                                 <constraint firstItem="URA-l6-6Ka" firstAttribute="top" secondItem="84j-Df-lLd" secondAttribute="top" constant="8" id="JzM-CR-Q83"/>
@@ -56,7 +52,6 @@
                                                 <constraint firstAttribute="bottom" secondItem="URA-l6-6Ka" secondAttribute="bottom" constant="6.5" id="jBm-SY-C7u"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <outlet property="girlImageView" destination="URA-l6-6Ka" id="2si-os-dOK"/>
                                             <outlet property="girlNameLable" destination="uts-aC-yS9" id="KTk-d8-GL4"/>
@@ -65,7 +60,6 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7VD-0S-txV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="1D2-0s-XaI"/>
@@ -97,7 +91,6 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入美女姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgK-AF-mh9">
                                 <rect key="frame" x="133" y="92" width="438" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="FAJ-vJ-uCl"/>
                                 </constraints>
@@ -106,7 +99,6 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美女姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z15-5R-pWw">
                                 <rect key="frame" x="38" y="96" width="68" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="3ro-NR-hbu"/>
                                     <constraint firstAttribute="width" constant="68" id="gyj-W4-o6l"/>
@@ -116,7 +108,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.90067121699999997" green="1" blue="0.71771184899999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lgK-AF-mh9" firstAttribute="top" secondItem="LmD-rx-p8H" secondAttribute="bottom" constant="72" id="SUj-Yi-Oom"/>
@@ -142,7 +133,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HAl-yh-HlE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

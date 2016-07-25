@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B7335B5F4C536D91839FBD97A152C17D6E2234A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B7335B5F4C536D91839FBD97A152C17D6E2234A6" : 0,
+    "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "769174CB-E8B3-42EB-B8FA-20B48924458C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B7335B5F4C536D91839FBD97A152C17D6E2234A6" : "SwiftDelegateDemo\/",
+    "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftDelegateDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftDelegateDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/CollectionViewControllerDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/SwiftDelegateDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B7335B5F4C536D91839FBD97A152C17D6E2234A6"
+    }
+  ]
+}
